@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>발리픽(Balipick) 계정 및 데이터 삭제</title>
+  <style>
+    :root {
+      --ink: oklch(0.28 0.02 60);
+      --muted: oklch(0.52 0.02 60);
+      --line: oklch(0.91 0.01 70);
+      --bg: oklch(0.99 0.008 80);
+      --accent: oklch(0.68 0.16 45);
+      --card: oklch(1 0 0);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.72;
+      letter-spacing: -0.01em;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    header.masthead { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 36px; }
+    .brand { display: inline-flex; align-items: baseline; gap: 10px; }
+    .brand b { font-size: 1.5rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+    .brand span { font-size: 0.95rem; color: var(--muted); }
+    h1 { font-size: 1.7rem; font-weight: 700; margin: 18px 0 6px; letter-spacing: -0.03em; }
+    .updated { color: var(--muted); font-size: 0.88rem; margin: 0; }
+    h2 { font-size: 1.12rem; font-weight: 700; margin: 44px 0 12px; padding-top: 8px; }
+    p, li { font-size: 0.97rem; color: var(--ink); }
+    ul, ol { padding-left: 1.2em; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-weight: 600; color: var(--muted); background: oklch(0.97 0.01 75); }
+    .steps { counter-reset: s; list-style: none; padding-left: 0; }
+    .steps li { position: relative; padding: 10px 0 10px 48px; border-bottom: 1px solid var(--line); }
+    .steps li::before {
+      counter-increment: s; content: counter(s);
+      position: absolute; left: 0; top: 10px;
+      width: 30px; height: 30px; border-radius: 50%;
+      background: var(--accent); color: oklch(1 0 0);
+      display: grid; place-items: center; font-weight: 700; font-size: 0.95rem;
+    }
+    .note {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 18px 20px; margin: 18px 0;
+    }
+    .note strong { color: var(--accent); }
+    code { background: oklch(0.95 0.01 75); padding: 1px 6px; border-radius: 6px; font-size: 0.88em; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="brand"><b>발리픽</b><span>Balipick</span></div>
+      <h1>계정 및 데이터 삭제</h1>
+      <p class="updated">앱: 발리픽(Balipick) · 운영자: 양명석 · 최종 개정일: 2026년 6월 16일</p>
+    </header>
+
+    <p><strong>발리픽(Balipick)</strong> 앱 사용자는 언제든지 본인의 계정과 관련 데이터의 삭제를 요청할 수 있습니다. 아래 두 가지 방법 중 하나로 진행하세요.</p>
+
+    <h2>방법 1. 앱에서 직접 삭제 (권장)</h2>
+    <ol class="steps">
+      <li>발리픽 앱을 실행하고 로그인합니다.</li>
+      <li>하단 탭에서 <code>홈</code> → 우측 상단 프로필/<code>설정</code> 으로 이동합니다.</li>
+      <li><code>계정 삭제</code> 를 선택합니다.</li>
+      <li>안내에 따라 삭제를 확인하면 계정과 로그인 정보가 삭제됩니다.</li>
+    </ol>
+
+    <h2>방법 2. 이메일로 요청</h2>
+    <p>앱에 접근할 수 없는 경우, 가입에 사용한 정보와 함께 아래 이메일로 삭제를 요청해 주세요. 본인 확인 후 처리합니다.</p>
+    <div class="note">
+      <p>📧 <strong><a href="mailto:denvernext80@gmail.com?subject=발리픽%20계정%20삭제%20요청">denvernext80@gmail.com</a></strong> 로 "계정 삭제 요청"을 보내 주세요.</p>
+    </div>
+
+    <h2>삭제되는 데이터 / 보관되는 데이터</h2>
+    <table>
+      <thead><tr><th>구분</th><th>항목</th><th>처리</th></tr></thead>
+      <tbody>
+        <tr><td>계정 정보</td><td>소셜 로그인 식별자, 이메일, 닉네임/이름</td><td><strong>삭제</strong> — 탈퇴 시 지체 없이 파기</td></tr>
+        <tr><td>기기/푸시 정보</td><td>푸시 알림 토큰(FCM/APNs)</td><td><strong>삭제</strong> — 탈퇴 시 파기</td></tr>
+        <tr><td>위치</td><td>지역 단위 정보(좌표 미저장)</td><td><strong>삭제</strong> — 계정과 함께 파기</td></tr>
+        <tr><td>분석 식별자</td><td>앱 인스턴스 ID(Google Analytics)</td><td><strong>삭제</strong> — 연결 해제·만료 처리</td></tr>
+        <tr><td>이용자 콘텐츠</td><td>커뮤니티 글·답변·후기 등</td><td><strong>익명 보관 가능</strong> — 다른 이용자의 대화 맥락 보존을 위해 작성자 정보가 익명 처리된 상태로 유지될 수 있음(개별 삭제는 앱 내 삭제 또는 이메일 요청)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <p><strong>보관 기간:</strong> 계정 및 개인 식별 데이터는 탈퇴 즉시 파기합니다. 다만 관련 법령(전자상거래법 등)에 따라 보존 의무가 있는 경우 해당 법정 기간 동안만 보관 후 파기합니다. 광고 식별자(IDFA/AAID)는 수집하지 않습니다.</p>
+    </div>
+
+    <p>본 페이지는 발리픽 <a href="./privacy.html">개인정보 처리방침</a> 8조(계정 및 데이터 삭제)의 세부 안내입니다.</p>
+
+    <footer>
+      발리픽(Balipick) · 운영자 양명석 · 문의: <a href="mailto:denvernext80@gmail.com">denvernext80@gmail.com</a><br />
+      © 2026 발리픽(Balipick). All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
